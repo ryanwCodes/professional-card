@@ -1,11 +1,36 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Card from "./components/Card/card";
+
+const ME = {
+  name: "Ryan Walter",
+  position: "Senior Software Engineer",
+  description: "la la la",
+  links: [
+    {
+      label: "LinkedIn",
+      Icon: () => null,
+      url: "",
+    },
+    {
+      label: "GitHub",
+      Icon: () => null,
+      url: "",
+    },
+    {
+      label: "Resume",
+      Icon: () => null,
+      url: "",
+    },
+  ],
+};
 
 export default function Home() {
+  const { name, position, description, links } = ME;
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <Image
+        {/* <Image
           className={styles.logo}
           src="https://nextjs.org/icons/next.svg"
           alt="Next.js logo"
@@ -44,9 +69,15 @@ export default function Home() {
           >
             Read our docs
           </a>
-        </div>
+        </div> */}
+        <Card
+          name={name}
+          position={position}
+          description={description}
+          links={links}
+        />
       </main>
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <a
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           target="_blank"
@@ -89,7 +120,7 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
-      </footer>
+      </footer> */}
     </div>
   );
 }

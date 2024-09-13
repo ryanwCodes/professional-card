@@ -1,0 +1,8 @@
+.container {
+  --background-rgb: darkgray;
+
+  display: flex;
+  background-color: var(--background-rgb);
+  padding: 30px;
+  border-radius: 8px;
+}
