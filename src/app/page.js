@@ -5,28 +5,30 @@ import Card from "./components/Card/card";
 const ME = {
   name: "Ryan Walter",
   position: "Senior Software Engineer",
-  description: "la la la",
+  description:
+    "Experienced Senior Front-End Engineer with over 8 years of expertise in developing customer-facing web applications and e-commerce platforms. Highly capable in React.js, with a proven ability to lead technical teams, mentor junior developers, and ensure high code quality.",
+  avatarUrl: "https://avatars.githubusercontent.com/u/109514166?v=4",
   links: [
     {
       label: "LinkedIn",
-      Icon: () => null,
-      url: "",
+      icon: "linkedin",
+      url: "https://www.linkedin.com/in/walter-ryan/",
     },
     {
       label: "GitHub",
-      Icon: () => null,
-      url: "",
+      icon: "github",
+      url: "https://github.com/ryanwCodes",
     },
     {
       label: "Resume",
-      Icon: () => null,
-      url: "",
+      icon: "file-earmark-arrow-down",
+      url: "/files/RyanWalterResume.pdf",
     },
   ],
 };
 
 export default function Home() {
-  const { name, position, description, links } = ME;
+  const { name, position, description, links, avatarUrl } = ME;
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -75,6 +77,7 @@ export default function Home() {
           position={position}
           description={description}
           links={links}
+          avatarUrl={avatarUrl}
         />
       </main>
       {/* <footer className={styles.footer}>

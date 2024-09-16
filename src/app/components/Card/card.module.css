@@ -2,7 +2,43 @@
   --background-rgb: darkgray;
 
   display: flex;
+  column-gap: 40px;
   background-color: var(--background-rgb);
   padding: 30px;
   border-radius: 8px;
+  max-width: 630px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.ctas {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.ctas i {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  color: white;
+  font-size: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
