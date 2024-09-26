@@ -15,7 +15,7 @@ export default function Card({
         <p>{description}</p>
         <div className={styles.ctas}>
           {links.map(({ label, icon, url }) => (
-            <a href={url}>
+            <a href={url} key={label}>
               {/* <span>{label}</span> */}
               <i class={`bi bi-${icon}`}></i>
             </a>
