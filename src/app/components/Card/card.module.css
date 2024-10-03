@@ -3,8 +3,13 @@
 
   display: flex;
   column-gap: 40px;
-  background: rgb(48,39,220);
-  background: linear-gradient(90deg, rgba(60,60,96,1) 0%, rgba(77,77,122,1) 51%, rgba(94,94,151,1) 100%);
+  background: rgb(48, 39, 220);
+  background: linear-gradient(
+    90deg,
+    rgba(60, 60, 96, 1) 0%,
+    rgba(77, 77, 122, 1) 51%,
+    rgba(94, 94, 151, 1) 100%
+  );
   padding: 30px;
   border-radius: 8px;
   max-width: 630px;
