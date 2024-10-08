@@ -22,8 +22,10 @@ export default function Card({
               rel="noopener noreferrer"
               aria-label={label}
             >
-              {/* <span>{label}</span> */}
-              <i class={`bi bi-${icon}`}></i>
+              <span className={styles.tooltip} id="fade">
+                {label}
+              </span>
+              <i className={`bi bi-${icon}`}></i>
             </a>
           ))}
         </div>

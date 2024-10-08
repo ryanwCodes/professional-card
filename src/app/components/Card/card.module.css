@@ -3,7 +3,7 @@
 
   display: flex;
   column-gap: 40px;
-  background: rgb(48, 39, 220);
+  background: rgb(77, 77, 122);
   background: linear-gradient(
     90deg,
     rgba(60, 60, 96, 1) 0%,
@@ -40,6 +40,33 @@
   display: inline-block;
   color: white;
   font-size: 30px;
+}
+
+.ctas a {
+  transition: 0.3s;
+}
+
+.ctas a:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+.tooltip {
+  position: absolute;
+  top: -30px;
+  left: -165%;
+  z-index: 2;
+  width: 100px;
+  color: white;
+  font-size: 12px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+}
+
+#fade {
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .content {
